@@ -1,15 +1,24 @@
-<html>
-    <div>
-        <h1 style="background-color: blanchedalmond;text-align: center;">dashboard</h1>"
+<mat-card>
+    <mat-card-content>
+        <h2>
+            Employee DashBoard
+        </h2>
+        <table class="Employee-table" >
+         <tr>
+            <th><b>Name</b></th>
+            <th><b>Position</b></th>
+            <th><b>Address</b></th>
+            <th><b>PhoneNumber</b></th>
+        </tr> 
+        <tr *ngFor="let e of Employees">
 
-        <ul>
-            <li *ngFor="let arr of Data">
-            <h3>{{arr.language}} discovered by {{arr.discover}}</h3>
-            </li>
-        </ul>
-    </div>
-</html>
-
-<div *ngFor="let i of mobiles">
-    {{i}}
-</div>
+                <td>{{e.name}}</td>
+                <td>{{e.position}}</td>
+                <td>{{e.address}}</td>
+                <td>{{e.phoneNumber}}</td>
+            </tr>
+          
+    
+        </table>
+    </mat-card-content>
+</mat-card>

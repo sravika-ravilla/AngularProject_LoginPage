@@ -1,0 +1,10 @@
+.form-control{
+    background-color:aquamarine  ;
+    justify-content: center
+}
+.loginclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  height: 100vh;
+}

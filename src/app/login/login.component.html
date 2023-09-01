@@ -1,15 +1,21 @@
-<html>
-    <form>
-        <div style ="text-align:center;">
-            <label for ="Email Id"> Enter Email Id:</label>
-            <input type="text" [(ngModel)]="EmailId" id="EmailId">
+<div class="loginclass">
+    <mat-card>
+    <mat-card-content>
+        <h2 style="background-color:coral;text-align: center;">Login Page</h2>
+        <form (ngSubmit)="login()" class="form-control">
+            <mat-form-field>
+                <input matInput placeholder="Username" [(ngModel)]="username" name="username">
+            </mat-form-field>
+            <br><br>
+                    <mat-form-field>
+                <input matInput placeholder="password" [(ngModel)]="password" name="password"><br>
+            </mat-form-field>
+            <br><br>
+            <button mat-raised-button color="primary" type="submit" style="background-color: darkgreen;text-align: center;">Login</button>
+            <br><br>
             <br>
-            <br>
-            <label for ="Password"> Enter Password</label>
-            <input type="text" [(ngModel)]="Password" id="Password">
-            <br>
-            <br>
-            <button type ="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
-</html>
+        </form>
+    </mat-card-content>
+    
+    </mat-card>
+    </div>

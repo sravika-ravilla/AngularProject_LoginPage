@@ -1,19 +1,19 @@
-import { Component } from '@angular/core';
-import { TestService } from '../test.service';
+import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent {
 
-  Data=[
-    {language:'C',discover:'Dennis Ritchie'},
-    {language:'C++',discover:'Bjarne Stroustrup'}
-  ]
-  constructor(private ts:TestService){
-
+export class DashBoardComponent implements OnInit{
+  Employees:any[]=[];
+  constructor(private CustomerService:EmployeeService){}
+  ngOnInit(){
+    this.CustomerService.getEmpDetails().subscribe((data)=>{
+      this.Employees=data;
+  
+    })
   }
-  mobiles=this.ts.mobiles;
 }

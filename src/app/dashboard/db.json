@@ -1,0 +1,48 @@
+{
+    "customers":
+    [
+        {
+            "name":"vinay",
+       "position":"Developer",
+        "address":"ongole",
+        "phoneNumber":"12121212"
+    },
+  {
+    "name":"Anantha",
+    "position":"Junior Developer",
+   "address":"Addanki",
+    "phoneNumber":"2211334455"
+},
+
+    {
+        "name":"Ramarao",
+        "position":"Automation Tester",
+        "address":"praksam",
+        "phoneNumber":"3322114422"
+    },
+
+   {
+    "name":"lakshmi",
+    "position":" Senior Developer",
+    "address":"Chennai",
+    "phoneNumber":"5544663322"
+},
+    {
+        
+        "name":"Bharath",
+       "position":" Developer",
+        "address":"Chennai",
+        "phoneNumber":"3322114455"
+    },
+    
+    {
+        
+        "name":"Reddy",
+       "position":"Manual Testing",
+        "address":"Noida",
+        "phoneNumber":"8976567896"
+    }
+
+
+    ]
+}
